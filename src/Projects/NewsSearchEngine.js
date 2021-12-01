@@ -17,11 +17,11 @@ function NewsSearchEngine(){
                     )
             }))
         }
-    }, project)
+    }, [project])
 
     function findProject(){
         for (var i=0; i < projectsData.length; i++){
-            if (projectsData[i].name == "News Search Engine"){
+            if (projectsData[i].name === "News Search Engine"){
                 return projectsData[i]
             }
         }
@@ -40,7 +40,7 @@ function NewsSearchEngine(){
                     <div className="textInline"><p>skills: </p>{skills}</div>
                     <br />
                 </div>
-                <img className="mainImage" src={project.mainImage} alt="project image"></img>
+                <img className="mainImage" src={project.mainImage} alt=""></img>
             </div>
         </div>
     )
