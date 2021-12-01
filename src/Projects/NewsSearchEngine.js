@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react/cjs/react.development";
 import projectsData from "../projectsData";
-import { skillsString } from "./projectFunctions";
-import { Link } from "react-router-dom";
 import NavBar from "../NavBar";
 
 import "./NewsSearchEngine.css";

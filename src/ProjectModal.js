@@ -3,7 +3,6 @@ import "./ProjectModal.css";
 import Button from '@mui/material/Button';
 import { maxWidth } from "@mui/system";
 import { Link } from "react-router-dom";
-import { skillsString } from "./Projects/projectFunctions";
 
 function ProjectModal({project}){
 
@@ -12,6 +11,19 @@ function ProjectModal({project}){
     useEffect(() => {
         console.log(project);
     })
+
+    function skillsString(arr){
+        let string = "";
+        for (var i = 0; i < arr.length; i++) {
+            if (i === 0){
+                string += arr[i]
+            }
+            else{
+                string += "," + arr[i]
+            }
+        }
+        return string;
+    }
 
     return (
         <div className="modal">

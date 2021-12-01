@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react/cjs/react.development";
 import projectsData from "../projectsData";
-import { skillsString } from "./projectFunctions";
-import { Link } from "react-router-dom";
 import iteration1 from "../project_images/freedom_link/iteration1.png";
 import beforebegin from "../project_images/freedom_link/beforebegin.png";
 import example from "../project_images/freedom_link/example.png";
