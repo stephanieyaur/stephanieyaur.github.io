@@ -3,4 +3,139 @@
     height: 300px;
     background-color: white;
     margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.backgroundImage:hover {
+    opacity: 0.06;
+}
+
+.projectName {
+    display: none;
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.projectDescription {
+    display: none;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    cursor: pointer;
+}
+
+.backgroundImage:hover + .projectName{
+    display: block;
+}
+
+.backgroundImage:hover ~ .projectDescription{
+    display: block;
+}
+
+h3 {
+    font-size: xx-large;
+    /* font-weight: bold; */
+    width: fit-content;
+}
+
+h4 {
+    font-size: xx-large;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 500;
+    /* color: #F4F2C4; */
+}
+
+.projectTop {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    /* align-items: center;
+    justify-content: center; */
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FF9B8E;
+    /* color: black; */
+}
+
+.textInline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    /* background-color: white; */
+    padding: 30px;
+    text-align: left;
+}
+
+.textSection {
+    margin-bottom: 40px;
+}
+
+
+.textAndImageContainer {
+    display: flex;
+}
+
+.imageContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.interface {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(163, 163, 163);
+}
+
+.contentSection {
+    text-align: left;
+    color: black;
+    padding: 30px;
+    display: flex;
+    border-top:rgb(163, 163, 163);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#step1 {
+    background-color: white;
+}
+
+.numberAndTitle{
+    width: 30vw;
+}
+
+.stepNumber {
+    font-size: 100px;
+    font-style: italic;
 }

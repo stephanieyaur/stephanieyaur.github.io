@@ -1,11 +1,13 @@
-function NavBar(){
+import { Link } from "react-router-dom";
+
+function NavBar({selected}){
     return (
         <div className="NavBar page">
-            <div className="homeLogo"><h2>stephanie yaur</h2></div>
+            <Link to={"/"} ><div className="homeLogo"><h2>stephanie yaur</h2></div></Link>
             <div className="navLinkGroup">
-                <div className="navlink"><h2>projects</h2></div>
-                <div className="navlink"><h2>skills</h2></div>
-                <div><h2>about</h2></div>
+                <Link to={"/projects"}><div className={`allnavlink navlinkbutend ${selected === "projects" ? `selectedClass` : null}`}><h2>projects</h2></div></Link>
+                <Link to={"/skills"}><div className={`allnavlink navlinkbutend ${selected === "skills" ? `selectedClass` : null}`}><h2>skills</h2></div></Link>
+                <Link to={"/about"}><div className={`allnavlink ${selected === "about" ? `selectedClass` : null}`}><h2>about</h2></div></Link>
             </div>
         </div>
     )

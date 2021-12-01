@@ -1,8 +1,12 @@
+import { Fragment } from "react/cjs/react.development";
+import NavBar from "./NavBar";
+
 function Skills(){
     return (
-        <div>
+        <Fragment>
+            <NavBar selected={"skills"} />
             <h1>Skills</h1>
-        </div>
+        </Fragment>
     )
 }
 
