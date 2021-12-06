@@ -29,7 +29,7 @@ function Projects(){
 
     const projectsDataArr = projectsData.map((project) => {
         return(
-            <div className="projectItem" onClick={() => {setClickedProject(project); setModal(true)}}>
+            <div key={project.name} className="projectItem" onClick={() => {setClickedProject(project); setModal(true)}}>
                 <img src={project.backgroundImage} className="backgroundImage" alt=""></img>
                 <div className="hoverLayer">
                     <div>

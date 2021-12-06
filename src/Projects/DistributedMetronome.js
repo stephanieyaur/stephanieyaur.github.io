@@ -6,7 +6,7 @@ import "./FreedomLink.css";
 
 function DistributedMetronome(){
 
-    const project = useState(findProject());
+    const project = findProject();
     const [skills, setSkills] = useState(null);
 
     useEffect(() => {
@@ -17,7 +17,7 @@ function DistributedMetronome(){
         if (project && project.skills){
             setSkills(project.skills.map((skill) => {
                 return(
-                    <div className="button white">{skill}</div>
+                    <div key={skill} className="button white">{skill}</div>
                     )
             }))
         }

@@ -17,7 +17,7 @@ function WeatherApp(){
         if (project && project.skills){
             setSkills(project.skills.map((skill) => {
                 return(
-                    <div className="button white">{skill}</div>
+                    <div key={skill} className="button white">{skill}</div>
                     )
             }))
         }
