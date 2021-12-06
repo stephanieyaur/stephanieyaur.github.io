@@ -34,7 +34,7 @@ function App() {
     // </div>
     <div className="App">
       <div id="fillerNavBar"></div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
