@@ -42,3 +42,9 @@ p{
     border-width: 1px;
     border-color: rgb(214, 214, 214);
 }
+
+.x {
+    /* align-items: right; */
+    text-align: right;
+    cursor: pointer;
+}

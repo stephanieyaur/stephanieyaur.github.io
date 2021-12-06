@@ -36,9 +36,9 @@ function Home(){
                     <Link className="circle" to={"projects"}>
                         <h2>Projects</h2>
                     </Link>
-                    <Link className="circle" to={"skills"}>
+                    {/* <Link className="circle" to={"skills"}>
                         <h2>Skills</h2>
-                    </Link>
+                    </Link> */}
                     <Link className="circle" to={"about"}>
                         <h2>About</h2>
                     </Link>

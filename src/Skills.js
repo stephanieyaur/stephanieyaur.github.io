@@ -5,7 +5,9 @@ function Skills(){
     return (
         <Fragment>
             <NavBar selected={"skills"} />
-            <h1>Skills</h1>
+            <div className="page">
+                <h1>Skills</h1>
+            </div>
         </Fragment>
     )
 }

@@ -1,10 +1,6 @@
 .home {
     z-index: 0;
 }
-
-.textLeftAlign {
-    text-align: left;
-}
 .displayFlex {
     display: flex;
 }

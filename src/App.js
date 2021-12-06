@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from './NavBar.js';
 import Home from './Home.js';
 import About from './About.js';
 import Projects from './Projects.js';
 import FreedomLink from './Projects/FreedomLink';
 import Skills from './Skills.js';
 import NewsSearchEngine from './Projects/NewsSearchEngine';
+import WeatherApp from './Projects/WeatherApp';
+import Philips from './Projects/Philips';
+import Siemens from './Projects/Siemens';
+import DistributedMetronome from './Projects/DistributedMetronome';
+import Amex from './Projects/Amex';
+import FarFromHome from './Projects/FarFromHome';
 
 function App() {
   return (
@@ -36,6 +41,12 @@ function App() {
           <Route path="/projects" element={<Projects/>} />
           <Route path="/projects/freedom-link" element={<FreedomLink/>} />
           <Route path="/projects/news-search-engine" element={<NewsSearchEngine/>} />
+          <Route path="/projects/weather-app" element={<WeatherApp/>} />
+          <Route path="/projects/american-express" element={<Amex/>} />
+          <Route path="/projects/distributed-metronome" element={<DistributedMetronome/>} />
+          <Route path="/projects/siemens-healthineers" element={<Siemens/>} />
+          <Route path="/projects/far-from-home" element={<FarFromHome/>} />
+          <Route path="/projects/philips" element={<Philips/>} />
           <Route path="/skills" element={<Skills/>} />
         </Routes>
       </BrowserRouter>
@@ -56,5 +67,6 @@ https://reactjs.org/docs/components-and-props.html
 https://reactjs.org/docs/hooks-effect.html
 https://stackoverflow.com/questions/39963565/react-passing-down-props-to-functional-components
 https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+https://www.codegrepper.com/code-examples/javascript/material+ui+change+button+to+custom+color
 
 */

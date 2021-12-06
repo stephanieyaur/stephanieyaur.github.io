@@ -4,14 +4,18 @@ import iteration1 from "../project_images/freedom_link/iteration1.png";
 import beforebegin from "../project_images/freedom_link/beforebegin.png";
 import example from "../project_images/freedom_link/example.png";
 import step1 from "../project_images/freedom_link/step1.png";
+import faq from "../project_images/freedom_link/faqs.png";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import step2 from "../project_images/freedom_link/step2.png";
+import step3 from "../project_images/freedom_link/step3.png";
+import emaildraft from "../project_images/freedom_link/emaildraft.png";
 
 import "./FreedomLink.css";
 import NavBar from "../NavBar";
 
 function FreedomLink(){
 
-    const [project, setProject] = useState(findProject());
+    const project = useState(findProject());
     const [skills, setSkills] = useState(null);
 
     useEffect(() => {
@@ -26,18 +30,18 @@ function FreedomLink(){
                     )
             }))
         }
-    }, project)
+    }, [project])
 
     function findProject(){
         for (var i=0; i < projectsData.length; i++){
-            if (projectsData[i].name == "Freedom Link"){
+            if (projectsData[i].name === "Freedom Link"){
                 return projectsData[i]
             }
         }
     }
 
     return(
-        <div>
+        <div className="freedomLink">
             <NavBar selected={"projects"} />
             <div className="projectTop freedomlinktop">
                 <div style={{marginRight: "30px", maxWidth: "50%", textAlign: "left"}}>
@@ -49,7 +53,7 @@ function FreedomLink(){
                     <div className="textInline"><p>skills: </p>{skills}</div>
                     <br />
                 </div>
-                <img className="mainImage" src={project.mainImage} alt="project image"></img>
+                <img className="mainImage" src={project.mainImage} alt=""></img>
             </div>
             <div className="content">
 
@@ -100,7 +104,7 @@ function FreedomLink(){
                     </div>
                     <div className="imageContainer">
                         <div style={{display: "inline", textAlign: "center"}}>
-                            <img src={iteration1} className="interface"></img>
+                            <img src={iteration1} className="interface" alt=""></img>
                             <p>Iteration 1</p>
                         </div>
                     </div>
@@ -118,7 +122,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={beforebegin} className="interface"></img>
+                        <img src={beforebegin} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -129,7 +133,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={step1} className="interface"></img>
+                        <img src={step1} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -140,7 +144,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={iteration1} className="interface"></img>
+                        <img src={step2} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -151,7 +155,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={iteration1} className="interface"></img>
+                        <img src={step3} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -162,7 +166,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={iteration1} className="interface"></img>
+                        <img src={emaildraft} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -173,7 +177,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={iteration1} className="interface"></img>
+                        <img src={faq} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -184,7 +188,7 @@ function FreedomLink(){
                 </div>
                 <div className="imageContainer">
                     <div style={{display: "inline", textAlign: "center"}}>
-                        <img src={example} className="interface"></img>
+                        <img src={example} className="interface" alt=""></img>
                     </div>
                 </div>
             </div>
